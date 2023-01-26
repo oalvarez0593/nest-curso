@@ -3,6 +3,9 @@ import typescriptLogo from "./typescript.svg";
 import { setupCounter } from "./counter";
 
 import { name } from "./bases/01-types";
+import { pikachu, pokemonsIDs } from "./bases/02-objects";
+import { charmander } from "./bases/03-classes";
+
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -14,6 +17,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </a>
     <h1>Vite + TypeScript</h1>
     <h2>Hello ${name}</h2>
+    <p>Este es el array de objecto ${pokemonsIDs}</p>
+    <p>Este es el objeto pokemon ${pikachu.name}</p>
+    <p>Este es pokemon desde clases ${charmander.name}</p>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
